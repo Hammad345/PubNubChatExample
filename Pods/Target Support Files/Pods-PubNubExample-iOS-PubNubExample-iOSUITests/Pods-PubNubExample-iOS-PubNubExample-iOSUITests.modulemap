@@ -1,0 +1,6 @@
+framework module Pods_PubNubExample_iOS_PubNubExample_iOSUITests {
+  umbrella header "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

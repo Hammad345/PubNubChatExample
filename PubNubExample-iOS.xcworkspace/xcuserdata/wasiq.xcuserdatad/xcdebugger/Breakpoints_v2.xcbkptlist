@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EB553A0F-0D7F-49B5-873A-F6BF3B30D096"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "452CC029-EEA6-45E8-A750-1EA83984D7C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubNubExample-iOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "452CC029-EEA6-45E8-A750-1EA83984D7C0 - 871ee23406d0b4a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PubNub.PubNubMessage) -&gt; () in PubNubExample_iOS.ViewController.pubnubListener() -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  uuid = "452CC029-EEA6-45E8-A750-1EA83984D7C0 - 871ee23406d0b7df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PubNub.PubNubMessage) -&gt; () in PubNubExample_iOS.ViewController.pubnubListener() -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B49725C4-53CB-4FB1-B717-1DD4C3DBAC69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubNubExample-iOS/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "pubnubPublishMessage(message:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B49725C4-53CB-4FB1-B717-1DD4C3DBAC69 - e13c769ce333bf07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubNubExample_iOS.ChatViewController.pubnubListener() -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "B49725C4-53CB-4FB1-B717-1DD4C3DBAC69 - 1825b4bf04ea43a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubNubExample_iOS.ChatViewController.pubnubPublishMessage(message: Swift.String) -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "B49725C4-53CB-4FB1-B717-1DD4C3DBAC69 - 4e49fda95439ee81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.UInt64, Swift.Error&gt;) -&gt; () in PubNubExample_iOS.ChatViewController.pubnubPublishMessage(message: Swift.String) -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A81B6D08-836D-42BA-B825-262A05EEA12B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubNubExample-iOS/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "keyboardWillHide(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A81B6D08-836D-42BA-B825-262A05EEA12B - 7d56c5fa1ba3038f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubNubExample_iOS.ChatViewController.keyboardWillHide(Foundation.Notification) -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "A81B6D08-836D-42BA-B825-262A05EEA12B - 90da11c7f1340272"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in PubNubExample_iOS.ChatViewController.keyboardWillHide(Foundation.Notification) -&gt; ()"
+                  moduleName = "PubNubExample-iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wasiq/Desktop/PubNubExample-iOS/PubNubExample-iOS/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

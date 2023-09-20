@@ -1,0 +1,1382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C2CAA52A03178D0EDD56AE6505D428 /* EventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694FEC8F4D718846F95A88D6BE089BD3 /* EventStream.swift */; };
+		058551FFF61F5CDCE9D5571C3201CE01 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FBE02B277F302FDC14D149CB1C680 /* Crypto.swift */; };
+		065E09DF1EFE8656091A15E17617E3F7 /* RequestIdOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C1CC8CAA72BBC6B8510C703ED4D22 /* RequestIdOperator.swift */; };
+		072F5354EF4DE8AB4144996803336792 /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7211FACC914E223C8AAE333852DBC3A7 /* LogWriter.swift */; };
+		0867845A47F2918A5E7F49D39335A611 /* SubscriptionSession+Presence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D83D72832E8A677F363C5C0F7FF0EAB /* SubscriptionSession+Presence.swift */; };
+		0A52C7B8B5D90AD0E9CAB53C8D698E01 /* SubscribeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07941C79A9FB48DC65E8E6AB4AD86E1 /* SubscribeRouter.swift */; };
+		0B9C36D8A27F9482923C71226028A5F1 /* PubNubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AEFFAE7992842B5EA4124AD27DA3B9 /* PubNubError.swift */; };
+		0BF009D3C8CE5530C1ADC44E88BD5183 /* URLQueryItem+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00FB4B58E8ADD7B6373B027A6D61ED /* URLQueryItem+PubNub.swift */; };
+		18EA7A3219BADA2005478847A4E48266 /* TimeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774C758AB1464E4C2E03181AC7552CB /* TimeRouter.swift */; };
+		199E4CE69AD20F4836501E7B51A67BF7 /* PubNubMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE08CE76C0E825C1FEAD5FB9999AAD7 /* PubNubMessage.swift */; };
+		1CD641E9991C60ECD92541A2F2629F0D /* MembershipObjectsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65978F66E9D65D35AA7D5C242872D812 /* MembershipObjectsRouter.swift */; };
+		1F43320B4F18D695AAA06FB59C70D5F6 /* OperationQueue+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D7CEC90A68A8FFA2AE994900C2479 /* OperationQueue+PubNub.swift */; };
+		23DF73730380A11AACF73D9168FD79D9 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1C1CEE7AA20C38F792D74970638BCD /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F9DAE4C18D3FC92CE3DA83584C8E70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		25239A6308A71DC23FAC29680B845BBE /* PubNubSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB550B96FBB82136845729DD5DDDA57 /* PubNubSwift-dummy.m */; };
+		254DA56B1D09606CEDD53287B09D3220 /* PresenceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB207DD86AB3D377A8D6033C8903EB30 /* PresenceRouter.swift */; };
+		277BBF6CC27022299AB64FF450A4AB9F /* DispatchQueue+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A632152D8F980224B3E87D6DB8179D /* DispatchQueue+PubNub.swift */; };
+		28B138A11CBFA374AB250AF9411D1527 /* XMLSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E5CA16F79860D6DBC4BD7B7821BB47 /* XMLSerialization.swift */; };
+		2A0AAB57C98C4C52687E9639CCBB0B08 /* Set+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27CD15EEC22C479AFDF60B570B78BA /* Set+PubNub.swift */; };
+		2CF8424B4444E5B021E6C74F2FFFC15D /* PubNubMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD059468F177DE5EE7BD6582EBCCD8 /* PubNubMessageAction.swift */; };
+		2D11705E10B65A006E428E1822061199 /* SubscriptionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ABF7C50EA73E0B7E8B11DC5FEC0265 /* SubscriptionSession.swift */; };
+		31C48307ADA98B144ED513D686D34599 /* Bool+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A5C2C5C882C0EA781FC18D90207B2 /* Bool+PubNub.swift */; };
+		3231F7B666BD71D7841BF2562979ABB1 /* AnyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76294971CF62CE1784EF85FE4AD51EF /* AnyJSON.swift */; };
+		342940F91F4EF78F5085F854C262E843 /* ResponseOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECFFB3F4806AC5F0B85EE91AAA0024 /* ResponseOperator.swift */; };
+		354E98FAAF29AE375DD4C1BB3D1B6884 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		37C61C2E7395E0D8AFCF61037E28590A /* PubNubChannelMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862C2EF52C76FF75EADE5FF170F445E /* PubNubChannelMetadata.swift */; };
+		389707D763A8D8CCFB46A2486AA88609 /* PubNubPushMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108397CD536BC45E9FF5F61F45E84B41 /* PubNubPushMessage.swift */; };
+		3ACD71BAC690FCC0B498B3180B723CC5 /* Pods-PubNubExample-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3710785B4D3EDF5D13B306C9A2B1B0E /* Pods-PubNubExample-iOS-dummy.m */; };
+		3D3B32107992DDE3CFA8D7043D0B179C /* SubscriptionStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8E88C23DE0A154671AF96027F278E /* SubscriptionStream.swift */; };
+		3E1C3866006C77DE3F716DF63E1D03A6 /* FileManagementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026CCE9F611AEF96F85F6241F663488 /* FileManagementRouter.swift */; };
+		3EC86F657B9766DF0A601098B9573F47 /* CBORDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B57D30E79CDA1484478769BEEBE42 /* CBORDecoder.swift */; };
+		4417FA3E02B779362255EEA9AF126E28 /* Int+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67821AE1866A1C30E8BDD9F0DC76CA96 /* Int+PubNub.swift */; };
+		46395A3F6ABD48BFBF910AF6B48CFE2E /* FCMAndroidPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07C89471D7E4F9E75BB94AA3A67173 /* FCMAndroidPayload.swift */; };
+		46F3D1555103FE786072FAC16935645F /* ChannelGroupsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9099CFB47B01053D925163D188A611 /* ChannelGroupsRouter.swift */; };
+		46FE8465A80516B3E9CAC0799EB1D66F /* File+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF58F6BB296E52BEE47E3AD9E43E58F /* File+PubNub.swift */; };
+		47F5CEDB53B745B944CB947039E7BA5A /* NSNumber+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5ED04C05C7A5CB3C6ADBD4009A0FE7 /* NSNumber+PubNub.swift */; };
+		4D6E59C35DDD77B90E1E7B3A984DEDFA /* Float32+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98FC2EDD10BEFFB41D46401E95175B8 /* Float32+PubNub.swift */; };
+		5562E22E174D8DB14D7E26362CE35C9C /* PubNubEntityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C1A05C1729AC7C4426D4643316922B /* PubNubEntityEvent.swift */; };
+		55712FEBB324A6492F0B4B15BB4BB761 /* SubscribeSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C375577E97410B1BB1F86A4026235 /* SubscribeSessionFactory.swift */; };
+		5681779A837909EE8EACEC5543871750 /* Encodable+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77397D9B46F6B94F8A767B8F27A792 /* Encodable+PubNub.swift */; };
+		571DD064E7C57E8B07F9DCB91AE453E9 /* HTTPSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498BC74FE253966DE5DA1EE1E3FC0BA0 /* HTTPSessionDelegate.swift */; };
+		59C9358C56049F1E89E1F44392119DC8 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD94C47E789ABA42D24C2439DFE1B6F /* Atomic.swift */; };
+		59F3597C852CDB7AC9DFC3E8635D01F5 /* DateFormatter+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EF4E47A38C02C7A718AEAC700EBA34 /* DateFormatter+PubNub.swift */; };
+		5ABD9CD25169153363C0EF2DEC92A0FA /* HTTPURLResponse+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53D6C8E4D3327C3039D81D1AA3C50 /* HTTPURLResponse+PubNub.swift */; };
+		5D660A7FB88098D9398D902C7523446F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5E446DD81EED1BD282481835F525E309 /* EndpointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CF149BD835A1F0B8A090876CBC50E /* EndpointResponse.swift */; };
+		62DD22F02948D882F3CF1A8F17FA821C /* PubNubConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02EDF2F50E733B527D71B57D966D32 /* PubNubConfiguration.swift */; };
+		637AC68EE109C5A0EA4470482789D843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		66E47EEE3A86F0F6B612295E0A5F07DD /* Typealias+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F3B0637ABBF3B1A023557BEE2B84E /* Typealias+PubNub.swift */; };
+		6DC70142976EF8C7EE68674288486D30 /* PubNubObjectMetadataPatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78760F6131F633473CD6AE5185FD7AD8 /* PubNubObjectMetadataPatcher.swift */; };
+		709C24B826BCBDF51F47690BCAE5DF1B /* Collection+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B6DC6BB5E1AC69F095DC489F9092C /* Collection+PubNub.swift */; };
+		72439F78B33DD7A4951542E2693B501D /* SubscribePresencePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62CC05945288AD22814502C1522D821 /* SubscribePresencePayload.swift */; };
+		74363BF0CEAF716ACBB8A0BEE92BF8D3 /* String+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E789F8B09EFE750E0856A883345A1A /* String+PubNub.swift */; };
+		74BD2E5F6A8CF2890E7AD0548979D6B1 /* Pods-PubNubExample-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F16BBD2A11C20154C85E2358DAE032A /* Pods-PubNubExample-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75714F12504143A1D5AA939776DAB906 /* SubscriptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C057B1F25DF82BA2DAE51B37CD6AB85 /* SubscriptionState.swift */; };
+		75E58AAFDD32B659DFAA91A76C1B0BA8 /* Thread+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B008EAEBABE4ABCDABFE5400378C719 /* Thread+PubNub.swift */; };
+		772727A968498DB99C1D17321BF820B8 /* Convertibles+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EEDD91C5981B80CEA2116261C042D /* Convertibles+PubNub.swift */; };
+		793D48022FA0FD4879C1B21EE625CF8C /* BoundedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7E2DDE1A828B786C2CB7EF9C0044E /* BoundedValue.swift */; };
+		820244FE1EF3215C3BC5F39311FCBA6D /* CaseAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987E46213714B78CC4E5C6CC683058DD /* CaseAccessible.swift */; };
+		826BF634CEF8E5FDD744744C908A5AB7 /* OptionalChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8578D2489E93D438360086C4B1F8A86C /* OptionalChange.swift */; };
+		85EBA8F3E5E4AC9E8040EADA86400C2F /* AutomaticRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BAD87C83200E91C2EFFCB16B446FB0 /* AutomaticRetry.swift */; };
+		8B8FC2A03884337139ECA42A3B57EA09 /* PubNubPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDC93716A1BB49731A1EF4737265CC /* PubNubPresence.swift */; };
+		94DE90AE50A1705D4E00BA264E30DABF /* MultipartInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668CF6F3F061F887E9F3E6CED23C48E1 /* MultipartInputStream.swift */; };
+		983BEF3A03001609969DC03E7D900B95 /* Replaceables+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD3729BCB64CB5FBE375728954ADE6 /* Replaceables+PubNub.swift */; };
+		9A8312D5E80072CC8E72BB817DF88C96 /* URLRequest+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D538791378CAD5C3838F810A62BF /* URLRequest+PubNub.swift */; };
+		9C028ABF7A01F60D8EC9B922B95FE078 /* PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF5DAD5B6ED5752026A020D3E053010 /* PubNub.swift */; };
+		9CFB47DF598D7BA84111197DB688611A /* HTTPFileTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C33321D1C9D3E59480C73776EC9AD /* HTTPFileTask.swift */; };
+		9D9E626D6A5981CB170D1F3BE3E96EA2 /* PubNubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A9A4B7151F69E5D1E8C27F287AE73 /* PubNubPage.swift */; };
+		A010AC04ED3A45FBDE07612100E5D7E7 /* Pods-PubNubExample-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA7B101A86524A538EC709828330022 /* Pods-PubNubExample-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A14AEF2F76B436F83ED3DAB98A066FCE /* URL+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5DF62CD0162056E8BBB6FC49606 /* URL+PubNub.swift */; };
+		A1B329892FF07E3862968BE1D021C45B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031AA3969AAD6237A7B4E388B8831D3 /* Request.swift */; };
+		A6FE9D7A1D440BA854AF612E767A126A /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB67BD05B0AD450117F2268D2717ED35 /* HistoryRouter.swift */; };
+		A76B7D52C29C830589EA437E6BD3B434 /* HTTPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CB6681532B464E3CAE00ADD7387C9 /* HTTPRouter.swift */; };
+		A8E17B9ECAEA2756D917E961E5665C07 /* ObjectsChannelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB077C5BEC4F35A27CF22C83626CF8 /* ObjectsChannelRouter.swift */; };
+		AA47A4074F80678D635F296B66C99D84 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B0758238804774A7B539B38A25063B /* HTTPSession.swift */; };
+		AAC794C21AFD122902BB6AA9568B4E0C /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5555BC3EF058B3EE5B65A55E37C938 /* WeakBox.swift */; };
+		ACAEACB9D49B1A450D25C58E0BEC4A6D /* FlatJSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD2FA9B71487B35DB6103E1823E0E1 /* FlatJSONCodable.swift */; };
+		ACBDD800ABA15A9E1F1CF90E756A486A /* ObjectsUUIDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03201D27B52FF0648F6B27FA569E6448 /* ObjectsUUIDRouter.swift */; };
+		ADCB53E139C9C314FD749668C6988AE9 /* PublishRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43ED5375E3154FD43E44EFF299337B /* PublishRouter.swift */; };
+		B07D4DC4FE010E48957691B32CD1A88D /* PubNubLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172AF7AD60217888860050F6DD83826 /* PubNubLogger.swift */; };
+		B0FF76F42A61D3A8846E1BAB32C26229 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1643D42CC10437DA3DDCC5ABDFB67151 /* Constants.swift */; };
+		B12070B2E7F8620A808B1A4E893DC825 /* URLSessionConfiguration+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396455F736E207C698C87909BCFFB4D5 /* URLSessionConfiguration+PubNub.swift */; };
+		B27482CF2DD43254DE2A4C975AB43E52 /* SubscribeObjectPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711C78CB29629895069870AC116D8EA /* SubscribeObjectPayload.swift */; };
+		B30DE36EC2DCB0C5E3EC401D1B5B9175 /* InstanceIdOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D11D334ED55C858535A766B9AD7F70 /* InstanceIdOperator.swift */; };
+		B425DF38C64B4BA539E7C9EC955ACAAD /* MessageActionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F918D4201F84F70AEBCE9F444B69595 /* MessageActionsRouter.swift */; };
+		B878028ED1E758182BAA7AC15B5EAE7A /* Error+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0EB5AA48FDBE643DD8BD3C358FBEA /* Error+PubNub.swift */; };
+		B931360A0625BF3C569D14AC9D6D9F25 /* GenericServicePayloadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B48F60042938A830E31276C1B4CFC3 /* GenericServicePayloadResponse.swift */; };
+		BAC2C06236AB148205E9FC27D8ED780D /* PubNubSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE31C89D80D64429F34230C9D5DA7F9 /* PubNubSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0D21FA7191C3DB653AD5D95BCEC6751 /* Validated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AA47B72AFBE62E7B19298E9B3A21BF /* Validated.swift */; };
+		C4FD920F78ACE3786D791D7CBB0EB2A7 /* SubscribeMessageActionPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDE3CE20E035377A31DB361CF0CE8C0 /* SubscribeMessageActionPayload.swift */; };
+		C5587DAD997C5E6753F31977BCBC8A05 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8870BD93E55194F7763121DA70AA1 /* ErrorDescription.swift */; };
+		C7559C2F404B9BD4B982DAFCCC2A4442 /* ObjectsMembershipsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BDDE4BB3636487F1D4ACA73B92AC43 /* ObjectsMembershipsRouter.swift */; };
+		D33CA9429B1E62F0E58BC2B841C15DC2 /* RequestOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310DF41ED7580F977022D19BD7B59158 /* RequestOperator.swift */; };
+		D47E1DD6AE4A8DBAD0A65BE204649BE3 /* ConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AAC421A17E91064ABEC2937D0010B /* ConnectionStatus.swift */; };
+		D674E0F6B64F9C933D4139BE3334911A /* AnyJSONType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA78529630663100E58C92B6058FD /* AnyJSONType.swift */; };
+		D694470E8575D6C2ED93E547F5DF1993 /* Pods-PubNubExample-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2992D3CA63624539F92E99B1AEF81ADA /* Pods-PubNubExample-iOSTests-dummy.m */; };
+		D8BF4B84DB3FF118F65D14DF88D0E350 /* NSLocking+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F85D6973927A7373A51A77463F6708 /* NSLocking+PubNub.swift */; };
+		D8E06BB25960788A3065888FEC2DF38A /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79164BFACF4B20FD530EF6E8C3CC0C98 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m */; };
+		D90BE2037010584130E48BA03AB4A469 /* CryptoInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8D3E3BC1EA33BD53C3553BF02F76A /* CryptoInputStream.swift */; };
+		DA5C687D68AF208CDD6676300DABE76E /* PushRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96ABA1B2126E1B9A9E9595324520E69 /* PushRouter.swift */; };
+		DB405A3EAAC1C80B9DC28F050F680BD5 /* SessionStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01619CF5075E952EEE6A6014E35AC071 /* SessionStream.swift */; };
+		DB7BABC681BEDE8A2D8428F25E12CCA1 /* Objects+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C8E0188317F9EBE7696CE59172E05 /* Objects+PubNub.swift */; };
+		DF320C29D0A53F7473490987220921DD /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D1817AB45B4C7CAB5AB5AF34CFA80 /* JSONCodable.swift */; };
+		E1ECDABE40241549B365E8A1E819F7A9 /* Data+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6D3C022B39342BD11B395CD4D6E66 /* Data+PubNub.swift */; };
+		E3917EB801B6282B5DBCEBCA986F5349 /* PubNubFCMPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CD641C305C6BC744EBDD750B96C4D1 /* PubNubFCMPayload.swift */; };
+		E4DC21AFACE4BEB1CBD24772D5D32EB6 /* PubNubUUIDMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540E890D20DBAD335F6E7D0B673F1FF /* PubNubUUIDMetadata.swift */; };
+		E7C8819BFCDD49A9A7ABF11DD7B7608F /* PubNubMembershipMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E4406DF7BECB7E5B76D1CFD0176E08 /* PubNubMembershipMetadata.swift */; };
+		EAC8B014360B782C7E563256A3CA6F7C /* InputStream+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F2FAEDA1A20C8E10D2837492EE904 /* InputStream+PubNub.swift */; };
+		F19C9E9E85C981A7DB26C5D544332F5F /* PAMToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC027FB2D4086B5425C6487E67AE5F62 /* PAMToken.swift */; };
+		F281CA549F08F992A8536A69A6A1D27F /* PubNubFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18BE0C6AE89659DFE0EFD9FE9A66DF /* PubNubFile.swift */; };
+		F318C70170699DF52CD423547BA1E90A /* FileManager+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BD5D3F9843117D09DFADD778609058 /* FileManager+PubNub.swift */; };
+		F5B148C0B4D2CFC8530307F8B2A9A8AD /* PubNubAPNSPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0A852A79AD8F65023F1E96D7DD3F3F /* PubNubAPNSPayload.swift */; };
+		F93BD8F3722A8DE03166247B99814D7B /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4ED5E12A5778BB9C545608EF95151 /* XMLDecoder.swift */; };
+		FC0F652CF4FF764DE73346738CB22A03 /* CryptoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C211FAE92CCCE80A01E9363678C86 /* CryptoStream.swift */; };
+		FC745156B3AD54DB7BD144840C6F304B /* CBORSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2E4C7054A33E370CDD9CAE99E7A59 /* CBORSerialization.swift */; };
+		FEECA1F6F1B30CF7980A07B9D21D50A4 /* FCMWebpushPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5AB910C695F50F9E32F1B7656455F /* FCMWebpushPayload.swift */; };
+		FFC03F389C75A27D345A3FF745A7B77F /* DecodingError+PubNub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D01A3C415C28B67F03D4026FE3397 /* DecodingError+PubNub.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42DB790B9589F88BB99FFE4BA7A45E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED241EAB3598E6FC1FFB5A303728AC1;
+			remoteInfo = PubNubSwift;
+		};
+		951E552EA143664CAEAA5C77FC6DF922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89C4645A7DAA0381A46A8A107CC512FE;
+			remoteInfo = "Pods-PubNubExample-iOS";
+		};
+		EBD18AF167FC19EC68924CC20E0E6B39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED241EAB3598E6FC1FFB5A303728AC1;
+			remoteInfo = PubNubSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014C1CC8CAA72BBC6B8510C703ED4D22 /* RequestIdOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestIdOperator.swift; path = Sources/PubNub/Networking/Request/Operators/RequestIdOperator.swift; sourceTree = "<group>"; };
+		01619CF5075E952EEE6A6014E35AC071 /* SessionStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionStream.swift; path = Sources/PubNub/Events/Session/SessionStream.swift; sourceTree = "<group>"; };
+		03201D27B52FF0648F6B27FA569E6448 /* ObjectsUUIDRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectsUUIDRouter.swift; path = Sources/PubNub/Networking/Routers/ObjectsUUIDRouter.swift; sourceTree = "<group>"; };
+		066C8E0188317F9EBE7696CE59172E05 /* Objects+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Objects+PubNub.swift"; path = "Sources/PubNub/APIs/Objects+PubNub.swift"; sourceTree = "<group>"; };
+		070EFEBE3C4061AA649F4A6E3CB86143 /* PubNubSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PubNubSwift.release.xcconfig; sourceTree = "<group>"; };
+		0A18BE0C6AE89659DFE0EFD9FE9A66DF /* PubNubFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubFile.swift; path = Sources/PubNub/Models/PubNubFile.swift; sourceTree = "<group>"; };
+		0A5555BC3EF058B3EE5B65A55E37C938 /* WeakBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakBox.swift; path = Sources/PubNub/Helpers/WeakBox.swift; sourceTree = "<group>"; };
+		0BE08CE76C0E825C1FEAD5FB9999AAD7 /* PubNubMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubMessage.swift; path = Sources/PubNub/Models/PubNubMessage.swift; sourceTree = "<group>"; };
+		0CA2442C66CC8477975B225053C5EBF1 /* Pods-PubNubExample-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PubNubExample-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		108397CD536BC45E9FF5F61F45E84B41 /* PubNubPushMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubPushMessage.swift; path = Sources/PubNub/Models/PubNubPushMessage.swift; sourceTree = "<group>"; };
+		14F5AB910C695F50F9E32F1B7656455F /* FCMWebpushPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCMWebpushPayload.swift; path = Sources/PubNub/Models/PubNubFCMPayload/FCMWebpushPayload.swift; sourceTree = "<group>"; };
+		1643D42CC10437DA3DDCC5ABDFB67151 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/PubNub/Helpers/Constants.swift; sourceTree = "<group>"; };
+		16ECFFB3F4806AC5F0B85EE91AAA0024 /* ResponseOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseOperator.swift; path = Sources/PubNub/Networking/Response/ResponseOperator.swift; sourceTree = "<group>"; };
+		1816C9126C41336D257E72661C77A58E /* Pods-PubNubExample-iOSTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PubNubExample-iOSTests"; path = Pods_PubNubExample_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		185679C926C66135E23089E0116DBFBE /* Pods-PubNubExample-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PubNubExample-iOS.modulemap"; sourceTree = "<group>"; };
+		1862C2EF52C76FF75EADE5FF170F445E /* PubNubChannelMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubChannelMetadata.swift; path = Sources/PubNub/Models/PubNubChannelMetadata.swift; sourceTree = "<group>"; };
+		1BE31C89D80D64429F34230C9D5DA7F9 /* PubNubSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PubNubSwift-umbrella.h"; sourceTree = "<group>"; };
+		1F43ED5375E3154FD43E44EFF299337B /* PublishRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRouter.swift; path = Sources/PubNub/Networking/Routers/PublishRouter.swift; sourceTree = "<group>"; };
+		25ABF7C50EA73E0B7E8B11DC5FEC0265 /* SubscriptionSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionSession.swift; path = Sources/PubNub/Subscription/SubscriptionSession.swift; sourceTree = "<group>"; };
+		264FBE02B277F302FDC14D149CB1C680 /* Crypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crypto.swift; path = Sources/PubNub/Helpers/Crypto/Crypto.swift; sourceTree = "<group>"; };
+		2774C758AB1464E4C2E03181AC7552CB /* TimeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeRouter.swift; path = Sources/PubNub/Networking/Routers/TimeRouter.swift; sourceTree = "<group>"; };
+		27A632152D8F980224B3E87D6DB8179D /* DispatchQueue+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+PubNub.swift"; path = "Sources/PubNub/Extensions/DispatchQueue+PubNub.swift"; sourceTree = "<group>"; };
+		2992D3CA63624539F92E99B1AEF81ADA /* Pods-PubNubExample-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PubNubExample-iOSTests-dummy.m"; sourceTree = "<group>"; };
+		2CCD92EC841BAF1F321F33D4D54EB750 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CE1D538791378CAD5C3838F810A62BF /* URLRequest+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+PubNub.swift"; path = "Sources/PubNub/Extensions/URLRequest+PubNub.swift"; sourceTree = "<group>"; };
+		2EE4ED5E12A5778BB9C545608EF95151 /* XMLDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLDecoder.swift; path = Sources/PubNub/Helpers/XML/XMLDecoder.swift; sourceTree = "<group>"; };
+		2F07C89471D7E4F9E75BB94AA3A67173 /* FCMAndroidPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCMAndroidPayload.swift; path = Sources/PubNub/Models/PubNubFCMPayload/FCMAndroidPayload.swift; sourceTree = "<group>"; };
+		2F16BBD2A11C20154C85E2358DAE032A /* Pods-PubNubExample-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PubNubExample-iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		2FA940AD9AA64F996E27034318B9F80D /* PubNubSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PubNubSwift.debug.xcconfig; sourceTree = "<group>"; };
+		310DF41ED7580F977022D19BD7B59158 /* RequestOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOperator.swift; path = Sources/PubNub/Networking/Request/RequestOperator.swift; sourceTree = "<group>"; };
+		312A9A4B7151F69E5D1E8C27F287AE73 /* PubNubPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubPage.swift; path = Sources/PubNub/Models/PubNubPage.swift; sourceTree = "<group>"; };
+		31F85D6973927A7373A51A77463F6708 /* NSLocking+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocking+PubNub.swift"; path = "Sources/PubNub/Extensions/NSLocking+PubNub.swift"; sourceTree = "<group>"; };
+		33BDDE4BB3636487F1D4ACA73B92AC43 /* ObjectsMembershipsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectsMembershipsRouter.swift; path = Sources/PubNub/Networking/Routers/ObjectsMembershipsRouter.swift; sourceTree = "<group>"; };
+		360CF149BD835A1F0B8A090876CBC50E /* EndpointResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndpointResponse.swift; path = Sources/PubNub/Networking/Response/EndpointResponse.swift; sourceTree = "<group>"; };
+		379F51662C943C966EB7327CF54FE4D9 /* PubNubSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PubNubSwift-prefix.pch"; sourceTree = "<group>"; };
+		380E24F36179819765CEEE2B4A1D3260 /* PubNubSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PubNubSwift; path = PubNub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		386E2F7486174F7E613312409F067643 /* Pods-PubNubExample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		396455F736E207C698C87909BCFFB4D5 /* URLSessionConfiguration+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+PubNub.swift"; path = "Sources/PubNub/Extensions/URLSessionConfiguration+PubNub.swift"; sourceTree = "<group>"; };
+		3AA7E2DDE1A828B786C2CB7EF9C0044E /* BoundedValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundedValue.swift; path = "Sources/PubNub/Property Wrappers/BoundedValue.swift"; sourceTree = "<group>"; };
+		3CD94C47E789ABA42D24C2439DFE1B6F /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/PubNub/Helpers/Atomic.swift; sourceTree = "<group>"; };
+		3E0EA5DF62CD0162056E8BBB6FC49606 /* URL+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+PubNub.swift"; path = "Sources/PubNub/Extensions/URL+PubNub.swift"; sourceTree = "<group>"; };
+		3EB550B96FBB82136845729DD5DDDA57 /* PubNubSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PubNubSwift-dummy.m"; sourceTree = "<group>"; };
+		3F918D4201F84F70AEBCE9F444B69595 /* MessageActionsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageActionsRouter.swift; path = Sources/PubNub/Networking/Routers/MessageActionsRouter.swift; sourceTree = "<group>"; };
+		4031AA3969AAD6237A7B4E388B8831D3 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/PubNub/Networking/Request/Request.swift; sourceTree = "<group>"; };
+		41E18EE4FA5404DAFFD796C7168EAE64 /* Pods-PubNubExample-iOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		451DA78529630663100E58C92B6058FD /* AnyJSONType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyJSONType.swift; path = Sources/PubNub/Helpers/AnyJSONType.swift; sourceTree = "<group>"; };
+		498BC74FE253966DE5DA1EE1E3FC0BA0 /* HTTPSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPSessionDelegate.swift; path = Sources/PubNub/Networking/HTTPSessionDelegate.swift; sourceTree = "<group>"; };
+		4F9C33321D1C9D3E59480C73776EC9AD /* HTTPFileTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPFileTask.swift; path = Sources/PubNub/Networking/HTTPFileTask.swift; sourceTree = "<group>"; };
+		50C1A05C1729AC7C4426D4643316922B /* PubNubEntityEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubEntityEvent.swift; path = Sources/PubNub/Events/Subscription/PubNubEntityEvent.swift; sourceTree = "<group>"; };
+		536B6DC6BB5E1AC69F095DC489F9092C /* Collection+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+PubNub.swift"; path = "Sources/PubNub/Extensions/Collection+PubNub.swift"; sourceTree = "<group>"; };
+		581D01A3C415C28B67F03D4026FE3397 /* DecodingError+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DecodingError+PubNub.swift"; path = "Sources/PubNub/Extensions/DecodingError+PubNub.swift"; sourceTree = "<group>"; };
+		58201EDFC817F7BF314DE65992610377 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E27CD15EEC22C479AFDF60B570B78BA /* Set+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Set+PubNub.swift"; path = "Sources/PubNub/Extensions/Set+PubNub.swift"; sourceTree = "<group>"; };
+		5FF5DAD5B6ED5752026A020D3E053010 /* PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNub.swift; path = Sources/PubNub/PubNub.swift; sourceTree = "<group>"; };
+		60F074BD46E38788A46DDBF9E24C07BD /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		61158C6D79CF497D5DA0B1DFC8EDC6CE /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests"; path = Pods_PubNubExample_iOS_PubNubExample_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D11D334ED55C858535A766B9AD7F70 /* InstanceIdOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceIdOperator.swift; path = Sources/PubNub/Networking/Request/Operators/InstanceIdOperator.swift; sourceTree = "<group>"; };
+		63A4C98D13149B662F37A699F8FAE45A /* Pods-PubNubExample-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PubNubExample-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65978F66E9D65D35AA7D5C242872D812 /* MembershipObjectsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MembershipObjectsRouter.swift; path = Sources/PubNub/Networking/Routers/MembershipObjectsRouter.swift; sourceTree = "<group>"; };
+		668CF6F3F061F887E9F3E6CED23C48E1 /* MultipartInputStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartInputStream.swift; path = Sources/PubNub/Helpers/Streams/MultipartInputStream.swift; sourceTree = "<group>"; };
+		67821AE1866A1C30E8BDD9F0DC76CA96 /* Int+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+PubNub.swift"; path = "Sources/PubNub/Extensions/Int+PubNub.swift"; sourceTree = "<group>"; };
+		69341D46C8599A09FE38D8FDE60354E6 /* PubNubSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PubNubSwift.modulemap; sourceTree = "<group>"; };
+		694FEC8F4D718846F95A88D6BE089BD3 /* EventStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventStream.swift; path = Sources/PubNub/Events/EventStream.swift; sourceTree = "<group>"; };
+		69AD47883CC6A756B3087015CC08D67F /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B77397D9B46F6B94F8A767B8F27A792 /* Encodable+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Encodable+PubNub.swift"; path = "Sources/PubNub/Extensions/Encodable+PubNub.swift"; sourceTree = "<group>"; };
+		713CB6681532B464E3CAE00ADD7387C9 /* HTTPRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRouter.swift; path = Sources/PubNub/Networking/HTTPRouter.swift; sourceTree = "<group>"; };
+		7211FACC914E223C8AAE333852DBC3A7 /* LogWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = Sources/PubNub/Helpers/LogWriter.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7540E890D20DBAD335F6E7D0B673F1FF /* PubNubUUIDMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubUUIDMetadata.swift; path = Sources/PubNub/Models/PubNubUUIDMetadata.swift; sourceTree = "<group>"; };
+		75EF4E47A38C02C7A718AEAC700EBA34 /* DateFormatter+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+PubNub.swift"; path = "Sources/PubNub/Extensions/DateFormatter+PubNub.swift"; sourceTree = "<group>"; };
+		7711C78CB29629895069870AC116D8EA /* SubscribeObjectPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeObjectPayload.swift; path = "Sources/PubNub/Networking/Routers/Subscribe Payloads/SubscribeObjectPayload.swift"; sourceTree = "<group>"; };
+		78760F6131F633473CD6AE5185FD7AD8 /* PubNubObjectMetadataPatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubObjectMetadataPatcher.swift; path = Sources/PubNub/Models/PubNubObjectMetadataPatcher.swift; sourceTree = "<group>"; };
+		79164BFACF4B20FD530EF6E8C3CC0C98 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m"; sourceTree = "<group>"; };
+		79C8D3E3BC1EA33BD53C3553BF02F76A /* CryptoInputStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoInputStream.swift; path = Sources/PubNub/Helpers/Streams/CryptoInputStream.swift; sourceTree = "<group>"; };
+		7B008EAEBABE4ABCDABFE5400378C719 /* Thread+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Thread+PubNub.swift"; path = "Sources/PubNub/Extensions/Thread+PubNub.swift"; sourceTree = "<group>"; };
+		7C2C211FAE92CCCE80A01E9363678C86 /* CryptoStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoStream.swift; path = Sources/PubNub/Helpers/Crypto/CryptoStream.swift; sourceTree = "<group>"; };
+		7EDD059468F177DE5EE7BD6582EBCCD8 /* PubNubMessageAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubMessageAction.swift; path = Sources/PubNub/Models/PubNubMessageAction.swift; sourceTree = "<group>"; };
+		80AB077C5BEC4F35A27CF22C83626CF8 /* ObjectsChannelRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectsChannelRouter.swift; path = Sources/PubNub/Networking/Routers/ObjectsChannelRouter.swift; sourceTree = "<group>"; };
+		80B3DBAB7F9990BA14515E1D248D203D /* Pods-PubNubExample-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82B48F60042938A830E31276C1B4CFC3 /* GenericServicePayloadResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericServicePayloadResponse.swift; path = Sources/PubNub/Networking/Response/GenericServicePayloadResponse.swift; sourceTree = "<group>"; };
+		8578D2489E93D438360086C4B1F8A86C /* OptionalChange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalChange.swift; path = Sources/PubNub/Core/OptionalChange.swift; sourceTree = "<group>"; };
+		859D612C819F6BFCDEEC004184B4C603 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests.modulemap"; sourceTree = "<group>"; };
+		86BAD87C83200E91C2EFFCB16B446FB0 /* AutomaticRetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutomaticRetry.swift; path = Sources/PubNub/Networking/Request/Operators/AutomaticRetry.swift; sourceTree = "<group>"; };
+		89BD5D3F9843117D09DFADD778609058 /* FileManager+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+PubNub.swift"; path = "Sources/PubNub/Extensions/FileManager+PubNub.swift"; sourceTree = "<group>"; };
+		8A9099CFB47B01053D925163D188A611 /* ChannelGroupsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChannelGroupsRouter.swift; path = Sources/PubNub/Networking/Routers/ChannelGroupsRouter.swift; sourceTree = "<group>"; };
+		8C057B1F25DF82BA2DAE51B37CD6AB85 /* SubscriptionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionState.swift; path = Sources/PubNub/Subscription/SubscriptionState.swift; sourceTree = "<group>"; };
+		8D83D72832E8A677F363C5C0F7FF0EAB /* SubscriptionSession+Presence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SubscriptionSession+Presence.swift"; path = "Sources/PubNub/Subscription/SubscriptionSession+Presence.swift"; sourceTree = "<group>"; };
+		9172AF7AD60217888860050F6DD83826 /* PubNubLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubLogger.swift; path = Sources/PubNub/Helpers/PubNubLogger.swift; sourceTree = "<group>"; };
+		918DFC069A116C6479CA03DF85D708F3 /* Pods-PubNubExample-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PubNubExample-iOS"; path = Pods_PubNubExample_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E86AF79BF4728ED80D9BEC499E863E /* Pods-PubNubExample-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PubNubExample-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94F468779932099B380F98C3ADE0F864 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		955F2FAEDA1A20C8E10D2837492EE904 /* InputStream+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "InputStream+PubNub.swift"; path = "Sources/PubNub/Extensions/InputStream+PubNub.swift"; sourceTree = "<group>"; };
+		987E46213714B78CC4E5C6CC683058DD /* CaseAccessible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseAccessible.swift; path = Sources/PubNub/Helpers/CaseAccessible.swift; sourceTree = "<group>"; };
+		999A5C2C5C882C0EA781FC18D90207B2 /* Bool+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+PubNub.swift"; path = "Sources/PubNub/Extensions/Bool+PubNub.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDE3CE20E035377A31DB361CF0CE8C0 /* SubscribeMessageActionPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeMessageActionPayload.swift; path = "Sources/PubNub/Networking/Routers/Subscribe Payloads/SubscribeMessageActionPayload.swift"; sourceTree = "<group>"; };
+		A07941C79A9FB48DC65E8E6AB4AD86E1 /* SubscribeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeRouter.swift; path = Sources/PubNub/Networking/Routers/SubscribeRouter.swift; sourceTree = "<group>"; };
+		A1AEFFAE7992842B5EA4124AD27DA3B9 /* PubNubError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubError.swift; path = Sources/PubNub/Errors/PubNubError.swift; sourceTree = "<group>"; };
+		A23ECC8D9C38A86895D35FC5C0DDB006 /* Pods-PubNubExample-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3710785B4D3EDF5D13B306C9A2B1B0E /* Pods-PubNubExample-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PubNubExample-iOS-dummy.m"; sourceTree = "<group>"; };
+		AA02EDF2F50E733B527D71B57D966D32 /* PubNubConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubConfiguration.swift; path = Sources/PubNub/PubNubConfiguration.swift; sourceTree = "<group>"; };
+		AB4D7CEC90A68A8FFA2AE994900C2479 /* OperationQueue+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+PubNub.swift"; path = "Sources/PubNub/Extensions/OperationQueue+PubNub.swift"; sourceTree = "<group>"; };
+		AB67BD05B0AD450117F2268D2717ED35 /* HistoryRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoryRouter.swift; path = Sources/PubNub/Networking/Routers/HistoryRouter.swift; sourceTree = "<group>"; };
+		B39C375577E97410B1BB1F86A4026235 /* SubscribeSessionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeSessionFactory.swift; path = Sources/PubNub/Subscription/SubscribeSessionFactory.swift; sourceTree = "<group>"; };
+		B3C04817A72F9DE0ACEF30D727DC6868 /* Pods-PubNubExample-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOS-Info.plist"; sourceTree = "<group>"; };
+		B4F53D6C8E4D3327C3039D81D1AA3C50 /* HTTPURLResponse+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HTTPURLResponse+PubNub.swift"; path = "Sources/PubNub/Extensions/HTTPURLResponse+PubNub.swift"; sourceTree = "<group>"; };
+		B62CC05945288AD22814502C1522D821 /* SubscribePresencePayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribePresencePayload.swift; path = "Sources/PubNub/Networking/Routers/Subscribe Payloads/SubscribePresencePayload.swift"; sourceTree = "<group>"; };
+		BC1F3B0637ABBF3B1A023557BEE2B84E /* Typealias+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Typealias+PubNub.swift"; path = "Sources/PubNub/Helpers/Typealias+PubNub.swift"; sourceTree = "<group>"; };
+		BDE0F7502682AA77BD492D0A8BB13399 /* Pods-PubNubExample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDFD3729BCB64CB5FBE375728954ADE6 /* Replaceables+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Replaceables+PubNub.swift"; path = "Sources/PubNub/Networking/Replaceables+PubNub.swift"; sourceTree = "<group>"; };
+		BF1F28F40E7FC7707CBD4014CAFA7129 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-Info.plist"; sourceTree = "<group>"; };
+		BFA7B101A86524A538EC709828330022 /* Pods-PubNubExample-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PubNubExample-iOS-umbrella.h"; sourceTree = "<group>"; };
+		C3E8E88C23DE0A154671AF96027F278E /* SubscriptionStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionStream.swift; path = Sources/PubNub/Events/Subscription/SubscriptionStream.swift; sourceTree = "<group>"; };
+		C3F8870BD93E55194F7763121DA70AA1 /* ErrorDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorDescription.swift; path = Sources/PubNub/Errors/ErrorDescription.swift; sourceTree = "<group>"; };
+		C8AA47B72AFBE62E7B19298E9B3A21BF /* Validated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validated.swift; path = Sources/PubNub/Helpers/Validated.swift; sourceTree = "<group>"; };
+		CC1C1CEE7AA20C38F792D74970638BCD /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		CD5867C7EBB2856A13B2FB8797289F51 /* PubNubSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PubNubSwift-Info.plist"; sourceTree = "<group>"; };
+		CDC6D3C022B39342BD11B395CD4D6E66 /* Data+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+PubNub.swift"; path = "Sources/PubNub/Extensions/Data+PubNub.swift"; sourceTree = "<group>"; };
+		CEB2E4C7054A33E370CDD9CAE99E7A59 /* CBORSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBORSerialization.swift; path = Sources/PubNub/Helpers/CBOR/CBORSerialization.swift; sourceTree = "<group>"; };
+		CECD2FA9B71487B35DB6103E1823E0E1 /* FlatJSONCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatJSONCodable.swift; path = Sources/PubNub/Core/FlatJSONCodable.swift; sourceTree = "<group>"; };
+		D13B57D30E79CDA1484478769BEEBE42 /* CBORDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBORDecoder.swift; path = Sources/PubNub/Helpers/CBOR/CBORDecoder.swift; sourceTree = "<group>"; };
+		D3B0758238804774A7B539B38A25063B /* HTTPSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPSession.swift; path = Sources/PubNub/Networking/HTTPSession.swift; sourceTree = "<group>"; };
+		D4E789F8B09EFE750E0856A883345A1A /* String+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+PubNub.swift"; path = "Sources/PubNub/Extensions/String+PubNub.swift"; sourceTree = "<group>"; };
+		D7090E99EC40E94D1C9A1BF87B0515AD /* Pods-PubNubExample-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PubNubExample-iOSTests.modulemap"; sourceTree = "<group>"; };
+		D76294971CF62CE1784EF85FE4AD51EF /* AnyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyJSON.swift; path = Sources/PubNub/Helpers/AnyJSON.swift; sourceTree = "<group>"; };
+		D7C0EB5AA48FDBE643DD8BD3C358FBEA /* Error+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Error+PubNub.swift"; path = "Sources/PubNub/Extensions/Error+PubNub.swift"; sourceTree = "<group>"; };
+		DB207DD86AB3D377A8D6033C8903EB30 /* PresenceRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenceRouter.swift; path = Sources/PubNub/Networking/Routers/PresenceRouter.swift; sourceTree = "<group>"; };
+		DE6AAC421A17E91064ABEC2937D0010B /* ConnectionStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionStatus.swift; path = Sources/PubNub/Subscription/ConnectionStatus.swift; sourceTree = "<group>"; };
+		DF0A852A79AD8F65023F1E96D7DD3F3F /* PubNubAPNSPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubAPNSPayload.swift; path = Sources/PubNub/Models/PubNubAPNSPayload.swift; sourceTree = "<group>"; };
+		DF7C3CE2F5148D25D3D0AAB75B95726E /* Pods-PubNubExample-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PubNubExample-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E13D1817AB45B4C7CAB5AB5AF34CFA80 /* JSONCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONCodable.swift; path = Sources/PubNub/Helpers/JSONCodable.swift; sourceTree = "<group>"; };
+		E3E5CA16F79860D6DBC4BD7B7821BB47 /* XMLSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLSerialization.swift; path = Sources/PubNub/Helpers/XML/XMLSerialization.swift; sourceTree = "<group>"; };
+		E6CD641C305C6BC744EBDD750B96C4D1 /* PubNubFCMPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubFCMPayload.swift; path = Sources/PubNub/Models/PubNubFCMPayload/PubNubFCMPayload.swift; sourceTree = "<group>"; };
+		E96ABA1B2126E1B9A9E9595324520E69 /* PushRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRouter.swift; path = Sources/PubNub/Networking/Routers/PushRouter.swift; sourceTree = "<group>"; };
+		E98FC2EDD10BEFFB41D46401E95175B8 /* Float32+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Float32+PubNub.swift"; path = "Sources/PubNub/Extensions/Float32+PubNub.swift"; sourceTree = "<group>"; };
+		EBF58F6BB296E52BEE47E3AD9E43E58F /* File+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "File+PubNub.swift"; path = "Sources/PubNub/APIs/File+PubNub.swift"; sourceTree = "<group>"; };
+		EC5ED04C05C7A5CB3C6ADBD4009A0FE7 /* NSNumber+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNumber+PubNub.swift"; path = "Sources/PubNub/Extensions/NSNumber+PubNub.swift"; sourceTree = "<group>"; };
+		F026CCE9F611AEF96F85F6241F663488 /* FileManagementRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagementRouter.swift; path = Sources/PubNub/Networking/Routers/FileManagementRouter.swift; sourceTree = "<group>"; };
+		F23EEDD91C5981B80CEA2116261C042D /* Convertibles+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Convertibles+PubNub.swift"; path = "Sources/PubNub/Networking/Convertibles+PubNub.swift"; sourceTree = "<group>"; };
+		F2CDC93716A1BB49731A1EF4737265CC /* PubNubPresence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubPresence.swift; path = Sources/PubNub/Models/PubNubPresence.swift; sourceTree = "<group>"; };
+		F5E4406DF7BECB7E5B76D1CFD0176E08 /* PubNubMembershipMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PubNubMembershipMetadata.swift; path = Sources/PubNub/Models/PubNubMembershipMetadata.swift; sourceTree = "<group>"; };
+		FC027FB2D4086B5425C6487E67AE5F62 /* PAMToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAMToken.swift; path = Sources/PubNub/Helpers/PAMToken.swift; sourceTree = "<group>"; };
+		FD00FB4B58E8ADD7B6373B027A6D61ED /* URLQueryItem+PubNub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLQueryItem+PubNub.swift"; path = "Sources/PubNub/Extensions/URLQueryItem+PubNub.swift"; sourceTree = "<group>"; };
+		FE185390ED3BD39406B1463F729B785C /* Pods-PubNubExample-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNubExample-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05129C2EAEAD20DC1290B75D81CEC4E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D660A7FB88098D9398D902C7523446F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1318AB5020E3653278F731BD88E849B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354E98FAAF29AE375DD4C1BB3D1B6884 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D021058E94862F95510AE97B265C8371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637AC68EE109C5A0EA4470482789D843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE107F5A8852EFFDD6B281C6F95F425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F9DAE4C18D3FC92CE3DA83584C8E70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E7A4206017BCE3EDEA857EAB217657 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				269073ED99098504F758F25B580035CF /* Pods-PubNubExample-iOS */,
+				B9DD0D275F1BEA214DCDC7D867D1CCAE /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */,
+				59F687F605E4F9DB2F7D1D2A98B5BD8F /* Pods-PubNubExample-iOSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14228707E2AF924BD94961CFA4BC8A9D /* PubNubSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D76294971CF62CE1784EF85FE4AD51EF /* AnyJSON.swift */,
+				451DA78529630663100E58C92B6058FD /* AnyJSONType.swift */,
+				3CD94C47E789ABA42D24C2439DFE1B6F /* Atomic.swift */,
+				86BAD87C83200E91C2EFFCB16B446FB0 /* AutomaticRetry.swift */,
+				999A5C2C5C882C0EA781FC18D90207B2 /* Bool+PubNub.swift */,
+				3AA7E2DDE1A828B786C2CB7EF9C0044E /* BoundedValue.swift */,
+				987E46213714B78CC4E5C6CC683058DD /* CaseAccessible.swift */,
+				D13B57D30E79CDA1484478769BEEBE42 /* CBORDecoder.swift */,
+				CEB2E4C7054A33E370CDD9CAE99E7A59 /* CBORSerialization.swift */,
+				8A9099CFB47B01053D925163D188A611 /* ChannelGroupsRouter.swift */,
+				536B6DC6BB5E1AC69F095DC489F9092C /* Collection+PubNub.swift */,
+				DE6AAC421A17E91064ABEC2937D0010B /* ConnectionStatus.swift */,
+				1643D42CC10437DA3DDCC5ABDFB67151 /* Constants.swift */,
+				F23EEDD91C5981B80CEA2116261C042D /* Convertibles+PubNub.swift */,
+				264FBE02B277F302FDC14D149CB1C680 /* Crypto.swift */,
+				79C8D3E3BC1EA33BD53C3553BF02F76A /* CryptoInputStream.swift */,
+				7C2C211FAE92CCCE80A01E9363678C86 /* CryptoStream.swift */,
+				CDC6D3C022B39342BD11B395CD4D6E66 /* Data+PubNub.swift */,
+				75EF4E47A38C02C7A718AEAC700EBA34 /* DateFormatter+PubNub.swift */,
+				581D01A3C415C28B67F03D4026FE3397 /* DecodingError+PubNub.swift */,
+				27A632152D8F980224B3E87D6DB8179D /* DispatchQueue+PubNub.swift */,
+				6B77397D9B46F6B94F8A767B8F27A792 /* Encodable+PubNub.swift */,
+				360CF149BD835A1F0B8A090876CBC50E /* EndpointResponse.swift */,
+				D7C0EB5AA48FDBE643DD8BD3C358FBEA /* Error+PubNub.swift */,
+				C3F8870BD93E55194F7763121DA70AA1 /* ErrorDescription.swift */,
+				694FEC8F4D718846F95A88D6BE089BD3 /* EventStream.swift */,
+				2F07C89471D7E4F9E75BB94AA3A67173 /* FCMAndroidPayload.swift */,
+				14F5AB910C695F50F9E32F1B7656455F /* FCMWebpushPayload.swift */,
+				EBF58F6BB296E52BEE47E3AD9E43E58F /* File+PubNub.swift */,
+				F026CCE9F611AEF96F85F6241F663488 /* FileManagementRouter.swift */,
+				89BD5D3F9843117D09DFADD778609058 /* FileManager+PubNub.swift */,
+				CECD2FA9B71487B35DB6103E1823E0E1 /* FlatJSONCodable.swift */,
+				E98FC2EDD10BEFFB41D46401E95175B8 /* Float32+PubNub.swift */,
+				82B48F60042938A830E31276C1B4CFC3 /* GenericServicePayloadResponse.swift */,
+				AB67BD05B0AD450117F2268D2717ED35 /* HistoryRouter.swift */,
+				4F9C33321D1C9D3E59480C73776EC9AD /* HTTPFileTask.swift */,
+				713CB6681532B464E3CAE00ADD7387C9 /* HTTPRouter.swift */,
+				D3B0758238804774A7B539B38A25063B /* HTTPSession.swift */,
+				498BC74FE253966DE5DA1EE1E3FC0BA0 /* HTTPSessionDelegate.swift */,
+				B4F53D6C8E4D3327C3039D81D1AA3C50 /* HTTPURLResponse+PubNub.swift */,
+				955F2FAEDA1A20C8E10D2837492EE904 /* InputStream+PubNub.swift */,
+				61D11D334ED55C858535A766B9AD7F70 /* InstanceIdOperator.swift */,
+				67821AE1866A1C30E8BDD9F0DC76CA96 /* Int+PubNub.swift */,
+				E13D1817AB45B4C7CAB5AB5AF34CFA80 /* JSONCodable.swift */,
+				7211FACC914E223C8AAE333852DBC3A7 /* LogWriter.swift */,
+				65978F66E9D65D35AA7D5C242872D812 /* MembershipObjectsRouter.swift */,
+				3F918D4201F84F70AEBCE9F444B69595 /* MessageActionsRouter.swift */,
+				668CF6F3F061F887E9F3E6CED23C48E1 /* MultipartInputStream.swift */,
+				31F85D6973927A7373A51A77463F6708 /* NSLocking+PubNub.swift */,
+				EC5ED04C05C7A5CB3C6ADBD4009A0FE7 /* NSNumber+PubNub.swift */,
+				066C8E0188317F9EBE7696CE59172E05 /* Objects+PubNub.swift */,
+				80AB077C5BEC4F35A27CF22C83626CF8 /* ObjectsChannelRouter.swift */,
+				33BDDE4BB3636487F1D4ACA73B92AC43 /* ObjectsMembershipsRouter.swift */,
+				03201D27B52FF0648F6B27FA569E6448 /* ObjectsUUIDRouter.swift */,
+				AB4D7CEC90A68A8FFA2AE994900C2479 /* OperationQueue+PubNub.swift */,
+				8578D2489E93D438360086C4B1F8A86C /* OptionalChange.swift */,
+				FC027FB2D4086B5425C6487E67AE5F62 /* PAMToken.swift */,
+				DB207DD86AB3D377A8D6033C8903EB30 /* PresenceRouter.swift */,
+				1F43ED5375E3154FD43E44EFF299337B /* PublishRouter.swift */,
+				5FF5DAD5B6ED5752026A020D3E053010 /* PubNub.swift */,
+				DF0A852A79AD8F65023F1E96D7DD3F3F /* PubNubAPNSPayload.swift */,
+				1862C2EF52C76FF75EADE5FF170F445E /* PubNubChannelMetadata.swift */,
+				AA02EDF2F50E733B527D71B57D966D32 /* PubNubConfiguration.swift */,
+				50C1A05C1729AC7C4426D4643316922B /* PubNubEntityEvent.swift */,
+				A1AEFFAE7992842B5EA4124AD27DA3B9 /* PubNubError.swift */,
+				E6CD641C305C6BC744EBDD750B96C4D1 /* PubNubFCMPayload.swift */,
+				0A18BE0C6AE89659DFE0EFD9FE9A66DF /* PubNubFile.swift */,
+				9172AF7AD60217888860050F6DD83826 /* PubNubLogger.swift */,
+				F5E4406DF7BECB7E5B76D1CFD0176E08 /* PubNubMembershipMetadata.swift */,
+				0BE08CE76C0E825C1FEAD5FB9999AAD7 /* PubNubMessage.swift */,
+				7EDD059468F177DE5EE7BD6582EBCCD8 /* PubNubMessageAction.swift */,
+				78760F6131F633473CD6AE5185FD7AD8 /* PubNubObjectMetadataPatcher.swift */,
+				312A9A4B7151F69E5D1E8C27F287AE73 /* PubNubPage.swift */,
+				F2CDC93716A1BB49731A1EF4737265CC /* PubNubPresence.swift */,
+				108397CD536BC45E9FF5F61F45E84B41 /* PubNubPushMessage.swift */,
+				7540E890D20DBAD335F6E7D0B673F1FF /* PubNubUUIDMetadata.swift */,
+				E96ABA1B2126E1B9A9E9595324520E69 /* PushRouter.swift */,
+				BDFD3729BCB64CB5FBE375728954ADE6 /* Replaceables+PubNub.swift */,
+				4031AA3969AAD6237A7B4E388B8831D3 /* Request.swift */,
+				014C1CC8CAA72BBC6B8510C703ED4D22 /* RequestIdOperator.swift */,
+				310DF41ED7580F977022D19BD7B59158 /* RequestOperator.swift */,
+				16ECFFB3F4806AC5F0B85EE91AAA0024 /* ResponseOperator.swift */,
+				01619CF5075E952EEE6A6014E35AC071 /* SessionStream.swift */,
+				5E27CD15EEC22C479AFDF60B570B78BA /* Set+PubNub.swift */,
+				D4E789F8B09EFE750E0856A883345A1A /* String+PubNub.swift */,
+				9EDE3CE20E035377A31DB361CF0CE8C0 /* SubscribeMessageActionPayload.swift */,
+				7711C78CB29629895069870AC116D8EA /* SubscribeObjectPayload.swift */,
+				B62CC05945288AD22814502C1522D821 /* SubscribePresencePayload.swift */,
+				A07941C79A9FB48DC65E8E6AB4AD86E1 /* SubscribeRouter.swift */,
+				B39C375577E97410B1BB1F86A4026235 /* SubscribeSessionFactory.swift */,
+				25ABF7C50EA73E0B7E8B11DC5FEC0265 /* SubscriptionSession.swift */,
+				8D83D72832E8A677F363C5C0F7FF0EAB /* SubscriptionSession+Presence.swift */,
+				8C057B1F25DF82BA2DAE51B37CD6AB85 /* SubscriptionState.swift */,
+				C3E8E88C23DE0A154671AF96027F278E /* SubscriptionStream.swift */,
+				7B008EAEBABE4ABCDABFE5400378C719 /* Thread+PubNub.swift */,
+				2774C758AB1464E4C2E03181AC7552CB /* TimeRouter.swift */,
+				BC1F3B0637ABBF3B1A023557BEE2B84E /* Typealias+PubNub.swift */,
+				3E0EA5DF62CD0162056E8BBB6FC49606 /* URL+PubNub.swift */,
+				FD00FB4B58E8ADD7B6373B027A6D61ED /* URLQueryItem+PubNub.swift */,
+				2CE1D538791378CAD5C3838F810A62BF /* URLRequest+PubNub.swift */,
+				396455F736E207C698C87909BCFFB4D5 /* URLSessionConfiguration+PubNub.swift */,
+				C8AA47B72AFBE62E7B19298E9B3A21BF /* Validated.swift */,
+				0A5555BC3EF058B3EE5B65A55E37C938 /* WeakBox.swift */,
+				2EE4ED5E12A5778BB9C545608EF95151 /* XMLDecoder.swift */,
+				E3E5CA16F79860D6DBC4BD7B7821BB47 /* XMLSerialization.swift */,
+				2B0D9AE753A14859D3639220B144FD6C /* Support Files */,
+			);
+			name = PubNubSwift;
+			path = PubNubSwift;
+			sourceTree = "<group>";
+		};
+		269073ED99098504F758F25B580035CF /* Pods-PubNubExample-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				185679C926C66135E23089E0116DBFBE /* Pods-PubNubExample-iOS.modulemap */,
+				94E86AF79BF4728ED80D9BEC499E863E /* Pods-PubNubExample-iOS-acknowledgements.markdown */,
+				A23ECC8D9C38A86895D35FC5C0DDB006 /* Pods-PubNubExample-iOS-acknowledgements.plist */,
+				A3710785B4D3EDF5D13B306C9A2B1B0E /* Pods-PubNubExample-iOS-dummy.m */,
+				0CA2442C66CC8477975B225053C5EBF1 /* Pods-PubNubExample-iOS-frameworks.sh */,
+				B3C04817A72F9DE0ACEF30D727DC6868 /* Pods-PubNubExample-iOS-Info.plist */,
+				BFA7B101A86524A538EC709828330022 /* Pods-PubNubExample-iOS-umbrella.h */,
+				BDE0F7502682AA77BD492D0A8BB13399 /* Pods-PubNubExample-iOS.debug.xcconfig */,
+				386E2F7486174F7E613312409F067643 /* Pods-PubNubExample-iOS.release.xcconfig */,
+			);
+			name = "Pods-PubNubExample-iOS";
+			path = "Target Support Files/Pods-PubNubExample-iOS";
+			sourceTree = "<group>";
+		};
+		2B0D9AE753A14859D3639220B144FD6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69341D46C8599A09FE38D8FDE60354E6 /* PubNubSwift.modulemap */,
+				3EB550B96FBB82136845729DD5DDDA57 /* PubNubSwift-dummy.m */,
+				CD5867C7EBB2856A13B2FB8797289F51 /* PubNubSwift-Info.plist */,
+				379F51662C943C966EB7327CF54FE4D9 /* PubNubSwift-prefix.pch */,
+				1BE31C89D80D64429F34230C9D5DA7F9 /* PubNubSwift-umbrella.h */,
+				2FA940AD9AA64F996E27034318B9F80D /* PubNubSwift.debug.xcconfig */,
+				070EFEBE3C4061AA649F4A6E3CB86143 /* PubNubSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PubNubSwift";
+			sourceTree = "<group>";
+		};
+		501201B6D630EE7CC12A72C6651A25C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				918DFC069A116C6479CA03DF85D708F3 /* Pods-PubNubExample-iOS */,
+				61158C6D79CF497D5DA0B1DFC8EDC6CE /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */,
+				1816C9126C41336D257E72661C77A58E /* Pods-PubNubExample-iOSTests */,
+				380E24F36179819765CEEE2B4A1D3260 /* PubNubSwift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		59F687F605E4F9DB2F7D1D2A98B5BD8F /* Pods-PubNubExample-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7090E99EC40E94D1C9A1BF87B0515AD /* Pods-PubNubExample-iOSTests.modulemap */,
+				63A4C98D13149B662F37A699F8FAE45A /* Pods-PubNubExample-iOSTests-acknowledgements.markdown */,
+				DF7C3CE2F5148D25D3D0AAB75B95726E /* Pods-PubNubExample-iOSTests-acknowledgements.plist */,
+				2992D3CA63624539F92E99B1AEF81ADA /* Pods-PubNubExample-iOSTests-dummy.m */,
+				41E18EE4FA5404DAFFD796C7168EAE64 /* Pods-PubNubExample-iOSTests-Info.plist */,
+				2F16BBD2A11C20154C85E2358DAE032A /* Pods-PubNubExample-iOSTests-umbrella.h */,
+				80B3DBAB7F9990BA14515E1D248D203D /* Pods-PubNubExample-iOSTests.debug.xcconfig */,
+				FE185390ED3BD39406B1463F729B785C /* Pods-PubNubExample-iOSTests.release.xcconfig */,
+			);
+			name = "Pods-PubNubExample-iOSTests";
+			path = "Target Support Files/Pods-PubNubExample-iOSTests";
+			sourceTree = "<group>";
+		};
+		B9DD0D275F1BEA214DCDC7D867D1CCAE /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				859D612C819F6BFCDEEC004184B4C603 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.modulemap */,
+				69AD47883CC6A756B3087015CC08D67F /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.markdown */,
+				58201EDFC817F7BF314DE65992610377 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-acknowledgements.plist */,
+				79164BFACF4B20FD530EF6E8C3CC0C98 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m */,
+				60F074BD46E38788A46DDBF9E24C07BD /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-frameworks.sh */,
+				BF1F28F40E7FC7707CBD4014CAFA7129 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-Info.plist */,
+				CC1C1CEE7AA20C38F792D74970638BCD /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h */,
+				2CCD92EC841BAF1F321F33D4D54EB750 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.debug.xcconfig */,
+				94F468779932099B380F98C3ADE0F864 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.release.xcconfig */,
+			);
+			name = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests";
+			path = "Target Support Files/Pods-PubNubExample-iOS-PubNubExample-iOSUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D4008B2C6382935FFE9F4D563B9482FF /* Pods */,
+				501201B6D630EE7CC12A72C6651A25C0 /* Products */,
+				04E7A4206017BCE3EDEA857EAB217657 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4008B2C6382935FFE9F4D563B9482FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14228707E2AF924BD94961CFA4BC8A9D /* PubNubSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DC447D2F7FB34688B4D0A49FF204C9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74BD2E5F6A8CF2890E7AD0548979D6B1 /* Pods-PubNubExample-iOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622180C39171247119D30A9442D6ED59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A010AC04ED3A45FBDE07612100E5D7E7 /* Pods-PubNubExample-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF25074DEC975815F3CAD9092BB88CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC2C06236AB148205E9FC27D8ED780D /* PubNubSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8458D94E709F6DAF0C92161C9E30A5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DF73730380A11AACF73D9168FD79D9 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A47D177B4EAC62716DD2FF030BC1B03 /* Pods-PubNubExample-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67A35CE3A6A0B16D35C502C3DE220422 /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOSTests" */;
+			buildPhases = (
+				4DC447D2F7FB34688B4D0A49FF204C9B /* Headers */,
+				6E4D96A92120C18B73B04CE3F9E9CE88 /* Sources */,
+				05129C2EAEAD20DC1290B75D81CEC4E8 /* Frameworks */,
+				C52E13093A2EF8DBEC27FAE8E25EDD3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39FC476F69B561F8D6E84E7B96ED39D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-PubNubExample-iOSTests";
+			productName = Pods_PubNubExample_iOSTests;
+			productReference = 1816C9126C41336D257E72661C77A58E /* Pods-PubNubExample-iOSTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		89C4645A7DAA0381A46A8A107CC512FE /* Pods-PubNubExample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26DCFBE51F4D59E123367E09DE673A3 /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOS" */;
+			buildPhases = (
+				622180C39171247119D30A9442D6ED59 /* Headers */,
+				A81311B6AE3CC98E85F1FFD7B1AC4A1B /* Sources */,
+				1318AB5020E3653278F731BD88E849B8 /* Frameworks */,
+				A076C24315EA74F3E8E63C2D2C397320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A973747B3F6BFA176FA196728012C6B /* PBXTargetDependency */,
+			);
+			name = "Pods-PubNubExample-iOS";
+			productName = Pods_PubNubExample_iOS;
+			productReference = 918DFC069A116C6479CA03DF85D708F3 /* Pods-PubNubExample-iOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		BED241EAB3598E6FC1FFB5A303728AC1 /* PubNubSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D53C9FB34CED3BA9CE7D6C248E86891 /* Build configuration list for PBXNativeTarget "PubNubSwift" */;
+			buildPhases = (
+				7CF25074DEC975815F3CAD9092BB88CF /* Headers */,
+				6F096FD73E5585E50BF4318F8EF4FF40 /* Sources */,
+				D021058E94862F95510AE97B265C8371 /* Frameworks */,
+				3114B0C56823AD4F9E46D2D663B465DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PubNubSwift;
+			productName = PubNub;
+			productReference = 380E24F36179819765CEEE2B4A1D3260 /* PubNubSwift */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7334CEE86A71ACE8DFB1776A8230A6C /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 389D51C7EAC019C3BDD0F473DF2DBA1A /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOS-PubNubExample-iOSUITests" */;
+			buildPhases = (
+				E8458D94E709F6DAF0C92161C9E30A5C /* Headers */,
+				C9796C5F0988133543B95347EF614083 /* Sources */,
+				ECE107F5A8852EFFDD6B281C6F95F425 /* Frameworks */,
+				F53FF9A459119C5B1369256D1C6D4C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04045B2C84BF1CC608150D805A9910D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-PubNubExample-iOS-PubNubExample-iOSUITests";
+			productName = Pods_PubNubExample_iOS_PubNubExample_iOSUITests;
+			productReference = 61158C6D79CF497D5DA0B1DFC8EDC6CE /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 501201B6D630EE7CC12A72C6651A25C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C4645A7DAA0381A46A8A107CC512FE /* Pods-PubNubExample-iOS */,
+				F7334CEE86A71ACE8DFB1776A8230A6C /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests */,
+				4A47D177B4EAC62716DD2FF030BC1B03 /* Pods-PubNubExample-iOSTests */,
+				BED241EAB3598E6FC1FFB5A303728AC1 /* PubNubSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3114B0C56823AD4F9E46D2D663B465DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A076C24315EA74F3E8E63C2D2C397320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52E13093A2EF8DBEC27FAE8E25EDD3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53FF9A459119C5B1369256D1C6D4C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4D96A92120C18B73B04CE3F9E9CE88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D694470E8575D6C2ED93E547F5DF1993 /* Pods-PubNubExample-iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F096FD73E5585E50BF4318F8EF4FF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3231F7B666BD71D7841BF2562979ABB1 /* AnyJSON.swift in Sources */,
+				D674E0F6B64F9C933D4139BE3334911A /* AnyJSONType.swift in Sources */,
+				59C9358C56049F1E89E1F44392119DC8 /* Atomic.swift in Sources */,
+				85EBA8F3E5E4AC9E8040EADA86400C2F /* AutomaticRetry.swift in Sources */,
+				31C48307ADA98B144ED513D686D34599 /* Bool+PubNub.swift in Sources */,
+				793D48022FA0FD4879C1B21EE625CF8C /* BoundedValue.swift in Sources */,
+				820244FE1EF3215C3BC5F39311FCBA6D /* CaseAccessible.swift in Sources */,
+				3EC86F657B9766DF0A601098B9573F47 /* CBORDecoder.swift in Sources */,
+				FC745156B3AD54DB7BD144840C6F304B /* CBORSerialization.swift in Sources */,
+				46F3D1555103FE786072FAC16935645F /* ChannelGroupsRouter.swift in Sources */,
+				709C24B826BCBDF51F47690BCAE5DF1B /* Collection+PubNub.swift in Sources */,
+				D47E1DD6AE4A8DBAD0A65BE204649BE3 /* ConnectionStatus.swift in Sources */,
+				B0FF76F42A61D3A8846E1BAB32C26229 /* Constants.swift in Sources */,
+				772727A968498DB99C1D17321BF820B8 /* Convertibles+PubNub.swift in Sources */,
+				058551FFF61F5CDCE9D5571C3201CE01 /* Crypto.swift in Sources */,
+				D90BE2037010584130E48BA03AB4A469 /* CryptoInputStream.swift in Sources */,
+				FC0F652CF4FF764DE73346738CB22A03 /* CryptoStream.swift in Sources */,
+				E1ECDABE40241549B365E8A1E819F7A9 /* Data+PubNub.swift in Sources */,
+				59F3597C852CDB7AC9DFC3E8635D01F5 /* DateFormatter+PubNub.swift in Sources */,
+				FFC03F389C75A27D345A3FF745A7B77F /* DecodingError+PubNub.swift in Sources */,
+				277BBF6CC27022299AB64FF450A4AB9F /* DispatchQueue+PubNub.swift in Sources */,
+				5681779A837909EE8EACEC5543871750 /* Encodable+PubNub.swift in Sources */,
+				5E446DD81EED1BD282481835F525E309 /* EndpointResponse.swift in Sources */,
+				B878028ED1E758182BAA7AC15B5EAE7A /* Error+PubNub.swift in Sources */,
+				C5587DAD997C5E6753F31977BCBC8A05 /* ErrorDescription.swift in Sources */,
+				02C2CAA52A03178D0EDD56AE6505D428 /* EventStream.swift in Sources */,
+				46395A3F6ABD48BFBF910AF6B48CFE2E /* FCMAndroidPayload.swift in Sources */,
+				FEECA1F6F1B30CF7980A07B9D21D50A4 /* FCMWebpushPayload.swift in Sources */,
+				46FE8465A80516B3E9CAC0799EB1D66F /* File+PubNub.swift in Sources */,
+				3E1C3866006C77DE3F716DF63E1D03A6 /* FileManagementRouter.swift in Sources */,
+				F318C70170699DF52CD423547BA1E90A /* FileManager+PubNub.swift in Sources */,
+				ACAEACB9D49B1A450D25C58E0BEC4A6D /* FlatJSONCodable.swift in Sources */,
+				4D6E59C35DDD77B90E1E7B3A984DEDFA /* Float32+PubNub.swift in Sources */,
+				B931360A0625BF3C569D14AC9D6D9F25 /* GenericServicePayloadResponse.swift in Sources */,
+				A6FE9D7A1D440BA854AF612E767A126A /* HistoryRouter.swift in Sources */,
+				9CFB47DF598D7BA84111197DB688611A /* HTTPFileTask.swift in Sources */,
+				A76B7D52C29C830589EA437E6BD3B434 /* HTTPRouter.swift in Sources */,
+				AA47A4074F80678D635F296B66C99D84 /* HTTPSession.swift in Sources */,
+				571DD064E7C57E8B07F9DCB91AE453E9 /* HTTPSessionDelegate.swift in Sources */,
+				5ABD9CD25169153363C0EF2DEC92A0FA /* HTTPURLResponse+PubNub.swift in Sources */,
+				EAC8B014360B782C7E563256A3CA6F7C /* InputStream+PubNub.swift in Sources */,
+				B30DE36EC2DCB0C5E3EC401D1B5B9175 /* InstanceIdOperator.swift in Sources */,
+				4417FA3E02B779362255EEA9AF126E28 /* Int+PubNub.swift in Sources */,
+				DF320C29D0A53F7473490987220921DD /* JSONCodable.swift in Sources */,
+				072F5354EF4DE8AB4144996803336792 /* LogWriter.swift in Sources */,
+				1CD641E9991C60ECD92541A2F2629F0D /* MembershipObjectsRouter.swift in Sources */,
+				B425DF38C64B4BA539E7C9EC955ACAAD /* MessageActionsRouter.swift in Sources */,
+				94DE90AE50A1705D4E00BA264E30DABF /* MultipartInputStream.swift in Sources */,
+				D8BF4B84DB3FF118F65D14DF88D0E350 /* NSLocking+PubNub.swift in Sources */,
+				47F5CEDB53B745B944CB947039E7BA5A /* NSNumber+PubNub.swift in Sources */,
+				DB7BABC681BEDE8A2D8428F25E12CCA1 /* Objects+PubNub.swift in Sources */,
+				A8E17B9ECAEA2756D917E961E5665C07 /* ObjectsChannelRouter.swift in Sources */,
+				C7559C2F404B9BD4B982DAFCCC2A4442 /* ObjectsMembershipsRouter.swift in Sources */,
+				ACBDD800ABA15A9E1F1CF90E756A486A /* ObjectsUUIDRouter.swift in Sources */,
+				1F43320B4F18D695AAA06FB59C70D5F6 /* OperationQueue+PubNub.swift in Sources */,
+				826BF634CEF8E5FDD744744C908A5AB7 /* OptionalChange.swift in Sources */,
+				F19C9E9E85C981A7DB26C5D544332F5F /* PAMToken.swift in Sources */,
+				254DA56B1D09606CEDD53287B09D3220 /* PresenceRouter.swift in Sources */,
+				ADCB53E139C9C314FD749668C6988AE9 /* PublishRouter.swift in Sources */,
+				9C028ABF7A01F60D8EC9B922B95FE078 /* PubNub.swift in Sources */,
+				F5B148C0B4D2CFC8530307F8B2A9A8AD /* PubNubAPNSPayload.swift in Sources */,
+				37C61C2E7395E0D8AFCF61037E28590A /* PubNubChannelMetadata.swift in Sources */,
+				62DD22F02948D882F3CF1A8F17FA821C /* PubNubConfiguration.swift in Sources */,
+				5562E22E174D8DB14D7E26362CE35C9C /* PubNubEntityEvent.swift in Sources */,
+				0B9C36D8A27F9482923C71226028A5F1 /* PubNubError.swift in Sources */,
+				E3917EB801B6282B5DBCEBCA986F5349 /* PubNubFCMPayload.swift in Sources */,
+				F281CA549F08F992A8536A69A6A1D27F /* PubNubFile.swift in Sources */,
+				B07D4DC4FE010E48957691B32CD1A88D /* PubNubLogger.swift in Sources */,
+				E7C8819BFCDD49A9A7ABF11DD7B7608F /* PubNubMembershipMetadata.swift in Sources */,
+				199E4CE69AD20F4836501E7B51A67BF7 /* PubNubMessage.swift in Sources */,
+				2CF8424B4444E5B021E6C74F2FFFC15D /* PubNubMessageAction.swift in Sources */,
+				6DC70142976EF8C7EE68674288486D30 /* PubNubObjectMetadataPatcher.swift in Sources */,
+				9D9E626D6A5981CB170D1F3BE3E96EA2 /* PubNubPage.swift in Sources */,
+				8B8FC2A03884337139ECA42A3B57EA09 /* PubNubPresence.swift in Sources */,
+				389707D763A8D8CCFB46A2486AA88609 /* PubNubPushMessage.swift in Sources */,
+				25239A6308A71DC23FAC29680B845BBE /* PubNubSwift-dummy.m in Sources */,
+				E4DC21AFACE4BEB1CBD24772D5D32EB6 /* PubNubUUIDMetadata.swift in Sources */,
+				DA5C687D68AF208CDD6676300DABE76E /* PushRouter.swift in Sources */,
+				983BEF3A03001609969DC03E7D900B95 /* Replaceables+PubNub.swift in Sources */,
+				A1B329892FF07E3862968BE1D021C45B /* Request.swift in Sources */,
+				065E09DF1EFE8656091A15E17617E3F7 /* RequestIdOperator.swift in Sources */,
+				D33CA9429B1E62F0E58BC2B841C15DC2 /* RequestOperator.swift in Sources */,
+				342940F91F4EF78F5085F854C262E843 /* ResponseOperator.swift in Sources */,
+				DB405A3EAAC1C80B9DC28F050F680BD5 /* SessionStream.swift in Sources */,
+				2A0AAB57C98C4C52687E9639CCBB0B08 /* Set+PubNub.swift in Sources */,
+				74363BF0CEAF716ACBB8A0BEE92BF8D3 /* String+PubNub.swift in Sources */,
+				C4FD920F78ACE3786D791D7CBB0EB2A7 /* SubscribeMessageActionPayload.swift in Sources */,
+				B27482CF2DD43254DE2A4C975AB43E52 /* SubscribeObjectPayload.swift in Sources */,
+				72439F78B33DD7A4951542E2693B501D /* SubscribePresencePayload.swift in Sources */,
+				0A52C7B8B5D90AD0E9CAB53C8D698E01 /* SubscribeRouter.swift in Sources */,
+				55712FEBB324A6492F0B4B15BB4BB761 /* SubscribeSessionFactory.swift in Sources */,
+				2D11705E10B65A006E428E1822061199 /* SubscriptionSession.swift in Sources */,
+				0867845A47F2918A5E7F49D39335A611 /* SubscriptionSession+Presence.swift in Sources */,
+				75714F12504143A1D5AA939776DAB906 /* SubscriptionState.swift in Sources */,
+				3D3B32107992DDE3CFA8D7043D0B179C /* SubscriptionStream.swift in Sources */,
+				75E58AAFDD32B659DFAA91A76C1B0BA8 /* Thread+PubNub.swift in Sources */,
+				18EA7A3219BADA2005478847A4E48266 /* TimeRouter.swift in Sources */,
+				66E47EEE3A86F0F6B612295E0A5F07DD /* Typealias+PubNub.swift in Sources */,
+				A14AEF2F76B436F83ED3DAB98A066FCE /* URL+PubNub.swift in Sources */,
+				0BF009D3C8CE5530C1ADC44E88BD5183 /* URLQueryItem+PubNub.swift in Sources */,
+				9A8312D5E80072CC8E72BB817DF88C96 /* URLRequest+PubNub.swift in Sources */,
+				B12070B2E7F8620A808B1A4E893DC825 /* URLSessionConfiguration+PubNub.swift in Sources */,
+				C0D21FA7191C3DB653AD5D95BCEC6751 /* Validated.swift in Sources */,
+				AAC794C21AFD122902BB6AA9568B4E0C /* WeakBox.swift in Sources */,
+				F93BD8F3722A8DE03166247B99814D7B /* XMLDecoder.swift in Sources */,
+				28B138A11CBFA374AB250AF9411D1527 /* XMLSerialization.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81311B6AE3CC98E85F1FFD7B1AC4A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACD71BAC690FCC0B498B3180B723CC5 /* Pods-PubNubExample-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9796C5F0988133543B95347EF614083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E06BB25960788A3065888FEC2DF38A /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04045B2C84BF1CC608150D805A9910D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PubNubSwift;
+			target = BED241EAB3598E6FC1FFB5A303728AC1 /* PubNubSwift */;
+			targetProxy = EBD18AF167FC19EC68924CC20E0E6B39 /* PBXContainerItemProxy */;
+		};
+		39FC476F69B561F8D6E84E7B96ED39D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PubNubExample-iOS";
+			target = 89C4645A7DAA0381A46A8A107CC512FE /* Pods-PubNubExample-iOS */;
+			targetProxy = 951E552EA143664CAEAA5C77FC6DF922 /* PBXContainerItemProxy */;
+		};
+		3A973747B3F6BFA176FA196728012C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PubNubSwift;
+			target = BED241EAB3598E6FC1FFB5A303728AC1 /* PubNubSwift */;
+			targetProxy = 42DB790B9589F88BB99FFE4BA7A45E9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E9DAED16628B8201B0E501150C02784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCD92EC841BAF1F321F33D4D54EB750 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOS-PubNubExample-iOSUITests/Pods-PubNubExample-iOS-PubNubExample-iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOS-PubNubExample-iOSUITests/Pods-PubNubExample-iOS-PubNubExample-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6260F0C1EEB97B04959AFAD970A0A259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE185390ED3BD39406B1463F729B785C /* Pods-PubNubExample-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOSTests/Pods-PubNubExample-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOSTests/Pods-PubNubExample-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DBF24873C5E43B0A29601B2326AEF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE0F7502682AA77BD492D0A8BB13399 /* Pods-PubNubExample-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOS/Pods-PubNubExample-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOS/Pods-PubNubExample-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9EB0880152ADE7478F623D7290BE93C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B3DBAB7F9990BA14515E1D248D203D /* Pods-PubNubExample-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOSTests/Pods-PubNubExample-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOSTests/Pods-PubNubExample-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD3BB0D676F69C2F0593BBBFFF162BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA940AD9AA64F996E27034318B9F80D /* PubNubSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PubNubSwift/PubNubSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PubNubSwift/PubNubSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PubNubSwift/PubNubSwift.modulemap";
+				PRODUCT_MODULE_NAME = PubNub;
+				PRODUCT_NAME = PubNub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDF42425BD351514BD8A496FFEBC7D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386E2F7486174F7E613312409F067643 /* Pods-PubNubExample-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOS/Pods-PubNubExample-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOS/Pods-PubNubExample-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E154AF31FA3D5336B552EB6C9A1FAE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070EFEBE3C4061AA649F4A6E3CB86143 /* PubNubSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PubNubSwift/PubNubSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PubNubSwift/PubNubSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PubNubSwift/PubNubSwift.modulemap";
+				PRODUCT_MODULE_NAME = PubNub;
+				PRODUCT_NAME = PubNub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDC64F5D16C4C8ECD791C7C4B8588DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F468779932099B380F98C3ADE0F864 /* Pods-PubNubExample-iOS-PubNubExample-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PubNubExample-iOS-PubNubExample-iOSUITests/Pods-PubNubExample-iOS-PubNubExample-iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PubNubExample-iOS-PubNubExample-iOSUITests/Pods-PubNubExample-iOS-PubNubExample-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		389D51C7EAC019C3BDD0F473DF2DBA1A /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOS-PubNubExample-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E9DAED16628B8201B0E501150C02784 /* Debug */,
+				EDC64F5D16C4C8ECD791C7C4B8588DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67A35CE3A6A0B16D35C502C3DE220422 /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB0880152ADE7478F623D7290BE93C6 /* Debug */,
+				6260F0C1EEB97B04959AFAD970A0A259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D53C9FB34CED3BA9CE7D6C248E86891 /* Build configuration list for PBXNativeTarget "PubNubSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3BB0D676F69C2F0593BBBFFF162BC4 /* Debug */,
+				E154AF31FA3D5336B552EB6C9A1FAE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26DCFBE51F4D59E123367E09DE673A3 /* Build configuration list for PBXNativeTarget "Pods-PubNubExample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBF24873C5E43B0A29601B2326AEF78 /* Debug */,
+				CDF42425BD351514BD8A496FFEBC7D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
